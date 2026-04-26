@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Biletomat</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+<div class="flex items-center justify-center h-screen w-screen bg-black overflow-hidden">
+<div class="w-[400px] h-[550px] bg-white">
+    <header class="bg-[#29b2e5] text-white flex px-2 justify-between items-center font-sans">
+        <div class="flex items-center gap-4">   
+            <div class="flex items-center text-[12px] font-light">
+                <span>○-○</span>
+                <span class="mx-1">➔</span>
+                <span>○</span>
+            </div>
+            
+            <div class="text-[11px] font-medium">
+                <p>24.03.2026</p>
+                <p>19:35:59</p>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-6">
+            <div class="text-[11px] font-medium text-right">
+                <p>NR POJAZDU</p>
+                <p class="text-[12px] font-bold tracking-widest">3405</p>
+            </div>
+            
+            <div class="flex gap-2 text-2xl">
+                <span class="cursor-pointer hover:scale-105 transition-transform">🇬🇧</span>
+                <span class="cursor-pointer hover:scale-105 transition-transform">🇩🇪</span>
+                <span class="cursor-pointer hover:scale-105 transition-transform">🇺🇦</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="grid grid-rows-4 scale-90">
+        
+        <div class="flex justify-between items-center border border-gray-400 bg-white p-1 shadow-sm">
+        
+            <div class="flex flex-col">
+                <h3 class="text-[12px] font-bold leading-none text-gray-800">BILET JEDNORAZOWY</h3>
+                <p class="text-[8px] text-gray-600 tracking-wider">NORMALNY / WSZYSTKIE LINIE</p>
+                
+                <div class="flex items-center gap-2">
+                    <div class="border border-black rounded-full w-6 h-6 flex items-center justify-center text-[11px] font-bold">
+                        1➔
+                    </div>
+                    
+                    <div class="bg-black text-white font-bold w-6 h-6 flex items-center justify-center text-[16px] rounded-sm">
+                        N
+                    </div>
+                    
+                    <div class="flex items-start ml-2 font-bold mt-1 text-gray-800">
+                        <span class="text-2xl">4</span>
+                        <div class="flex flex-col items-center ml-1">
+                            <span class="text-sm">60</span>
+                            <span class="text-[11px]">zł</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-2 pr-2">
+                <button class="w-12 h-12 border border-gray-400 rounded-lg flex items-center justify-center bg-[#f0f4f8] hover:bg-gray-200 active:bg-gray-300 transition-colors shadow-inner cursor-pointer">
+                    <span class="text-4xl font-bold text-gray-800 mb-1">−</span>
+                </button>
+                
+                <div class="flex flex-col items-center justify-center w-10">
+                    <span class="text-2xl font-bold leading-none text-gray-800">0</span>
+                    <span class="text-[12px] font-bold text-gray-800">szt.</span>
+                </div>
+                
+                <button class="w-12 h-12 border border-gray-400 rounded-lg flex items-center justify-center bg-[#f0f4f8] hover:bg-gray-200 active:bg-gray-300 transition-colors shadow-inner cursor-pointer">
+                    <span class="text-4xl font-bold text-gray-800 mb-1">+</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="flex justify-between items-center border border-gray-400 bg-white p-1 shadow-sm">
+        
+            <div class="flex flex-col">
+                <h3 class="text-[12px] font-bold leading-none text-gray-800">BILET JEDNORAZOWY</h3>
+                <p class="text-[8px] text-gray-600 tracking-wider">ULGOWY / WSZYSTKIE LINIE</p>
+                
+                <div class="flex items-center gap-2">
+                    <div class="border border-black rounded-full w-6 h-6 flex items-center justify-center text-[11px] font-bold">
+                        1➔
+                    </div>
+                    
+                    <div class="bg-black text-white font-bold w-6 h-6 flex items-center justify-center text-[16px] rounded-sm">
+                        U
+                    </div>
+                    
+                    <div class="flex items-start ml-2 font-bold mt-1 text-gray-800">
+                        <span class="text-2xl">2</span>
+                        <div class="flex flex-col items-center ml-1">
+                            <span class="text-sm">30</span>
+                            <span class="text-[11px]">zł</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-2 pr-2">
+                <button class="w-12 h-12 border border-gray-400 rounded-lg flex items-center justify-center bg-[#f0f4f8] hover:bg-gray-200 active:bg-gray-300 transition-colors shadow-inner cursor-pointer">
+                    <span class="text-4xl font-bold text-gray-800 mb-1">−</span>
+                </button>
+                
+                <div class="flex flex-col items-center justify-center w-10">
+                    <span class="text-2xl font-bold leading-none text-gray-800">0</span>
+                    <span class="text-[12px] font-bold text-gray-800">szt.</span>
+                </div>
+                
+                <button class="w-12 h-12 border border-gray-400 rounded-lg flex items-center justify-center bg-[#f0f4f8] hover:bg-gray-200 active:bg-gray-300 transition-colors shadow-inner cursor-pointer">
+                    <span class="text-4xl font-bold text-gray-800 mb-1">+</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="flex justify-between items-center border border-gray-400 bg-white p-1 shadow-sm">
+        
+            <div class="flex flex-col">
+                <h3 class="text-[12px] font-bold leading-none text-gray-800">BILET CZASOWY / 15 MIN</h3>
+                <p class="text-[8px] text-gray-600 tracking-wider">NORMALNY / WSZYSTKIE LINIE</p>
+                
+                <div class="flex items-center gap-2">
+                    <div class="border border-black rounded-full w-6 h-6 flex items-center justify-center text-[11px] font-bold">
+                        1➔
+                    </div>
+                    
+                    <div class="bg-black text-white font-bold w-6 h-6 flex items-center justify-center text-[16px] rounded-sm">
+                        N
+                    </div>
+                    
+                    <div class="flex items-start ml-2 font-bold mt-1 text-gray-800">
+                        <span class="text-2xl">3</span>
+                        <div class="flex flex-col items-center ml-1">
+                            <span class="text-sm">20</span>
+                            <span class="text-[11px]">zł</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-2 pr-2">
+                <button class="w-12 h-12 border border-gray-400 rounded-lg flex items-center justify-center bg-[#f0f4f8] hover:bg-gray-200 active:bg-gray-300 transition-colors shadow-inner cursor-pointer">
+                    <span class="text-4xl font-bold text-gray-800 mb-1">−</span>
+                </button>
+                
+                <div class="flex flex-col items-center justify-center w-10">
+                    <span class="text-2xl font-bold leading-none text-gray-800">0</span>
+                    <span class="text-[12px] font-bold text-gray-800">szt.</span>
+                </div>
+                
+                <button class="w-12 h-12 border border-gray-400 rounded-lg flex items-center justify-center bg-[#f0f4f8] hover:bg-gray-200 active:bg-gray-300 transition-colors shadow-inner cursor-pointer">
+                    <span class="text-4xl font-bold text-gray-800 mb-1">+</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="flex justify-between items-center border border-gray-400 bg-white p-1 shadow-sm">
+        
+            <div class="flex flex-col">
+                <h3 class="text-[12px] font-bold leading-none text-gray-800">BILET CZASOWY / 15 MIN</h3>
+                <p class="text-[8px] text-gray-600 tracking-wider">ULGOWY / WSZYSTKIE LINIE</p>
+                
+                <div class="flex items-center gap-2">
+                    <div class="border border-black rounded-full w-6 h-6 flex items-center justify-center text-[11px] font-bold">
+                        1➔
+                    </div>
+                    
+                    <div class="bg-black text-white font-bold w-6 h-6 flex items-center justify-center text-[16px] rounded-sm">
+                        U
+                    </div>
+                    
+                    <div class="flex items-start ml-2 font-bold mt-1 text-gray-800">
+                        <span class="text-2xl">1</span>
+                        <div class="flex flex-col items-center ml-1">
+                            <span class="text-sm">60</span>
+                            <span class="text-[11px]">zł</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-2 pr-2">
+                <button class="w-12 h-12 border border-gray-400 rounded-lg flex items-center justify-center bg-[#f0f4f8] hover:bg-gray-200 active:bg-gray-300 transition-colors shadow-inner cursor-pointer">
+                    <span class="text-4xl font-bold text-gray-800 mb-1">−</span>
+                </button>
+                
+                <div class="flex flex-col items-center justify-center w-10">
+                    <span class="text-2xl font-bold leading-none text-gray-800">0</span>
+                    <span class="text-[12px] font-bold text-gray-800">szt.</span>
+                </div>
+                
+                <button class="w-12 h-12 border border-gray-400 rounded-lg flex items-center justify-center bg-[#f0f4f8] hover:bg-gray-200 active:bg-gray-300 transition-colors shadow-inner cursor-pointer">
+                    <span class="text-4xl font-bold text-gray-800 mb-1">+</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="grid grid-cols-2 grid-rows-2 gap-2 text-[13px] h-[120px] mx-4 my-2">
+        <button class="bg-blue-400 text-white font-bold rounded-md 
+        active:scale-50 active:bg-pink-400 transition-transform cursor-pointer hover:bg-blue-500">Bilety Gmina Wrocław</button>
+        <button class="bg-blue-400 text-white font-bold rounded-md
+        active:scale-98 active:rotate-180 transition-transform ease-in cursor-pointer hover:bg-blue-500">Bilety Międzygminne</button>
+        <button class="bg-blue-400 text-white font-bold rounded-md
+        active:scale-98 cursor-pointer active:collapse hover:bg-blue-500">Sprawdź ważność biletów zakupionych w kasowniku</button>
+        <button class="bg-blue-400 text-white font-bold rounded-md
+        active:scale-98 cursor-pointer hover:bg-blue-500">Obsługa URBANCARD</button>
+    </div>
+
+    <footer class="grid grid-cols-6 gap-2 items-center m-4">
+        <img src="mastercard.png" alt="Mastercard">
+        <img src="maestro.png" alt="Maestro">
+        <img src="visa.png" alt="Visa">
+        <img src="diners.png" alt="Diners">
+        <img src="disc.png" alt="Discover">
+        <button class="hover:scale-130 ease-in cursor-pointer transition-transform"><img src="blik.jpg" alt="Blik"></button>
+    </footer> 
+</div> 
+</div>
+
+</body>
+
+</html>

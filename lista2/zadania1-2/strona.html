@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ROCQ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-black bg-gradient-to-r from-black via-[#0f1429] to-[#191e33] text-white">
+  <header class="bg-black text-white flex items-center justify-between px-6 py-4 w-full max-w-7xl mx-auto px-6 font-sans tracking-wide shadow-md mx-auto sticky top-0 z-50">
+    
+    <div class="flex items-center gap-8">
+      
+      <img src="logo-rocq-orange_white.svg" alt="ROCQ" class="w-40   font-bold font-sans">
+
+      <nav class="hidden xl:flex items-center gap-6 text-[#d1d5db] hover:text-[#fd530b] focus:underline focus:text-[#fd530b] text-base font-light">
+        <a href="#">Learn</a>
+        <a href="#">Platform</a>
+        <a href="#">Packages</a>
+        <a href="#">Consortium</a>
+        <a href="#">Community</a>
+        <a href="#">News</a>
+      </nav>    
+    </div>
+
+    <div class="flex items-center gap-6">
+      
+      <div class="hidden sm:flex items-center bg-[#151821] border border-[#ff5c00] rounded-md overflow-hidden">
+        <input 
+          type="text" 
+          placeholder="Search Rocq packages" 
+          class="bg-transparent text-white placeholder-[#9ca3af] px-4 py-2 w-full max-w-[12rem] sm:max-w-[16rem] text-sm focus:outline-none"
+        >
+        <button class="bg-[#ff5c00] hover:bg-[#e65200] transition-colors duration-200 px-4 py-2 flex items-center justify-center">
+          <img src="icon.svg" alt="Search" class="w-5 h-5 cursor-pointer invert">
+        </button>
+      </div>
+
+      <button class="bg-[#0b0e14] text-[#ff5c00] border border-[#3b2159] cursor-pointer px-5 py-2.5 rounded-md text-sm font-semibold transition-all duration-200 whitespace-nowrap">
+        Get Started
+      </button>
+    </div>
+
+  </header>
+
+  <div class="flex flex-col items-center text-center max-w-[48rem] mx-auto px-6 py-12 font-sans text-white">
+  
+  <div class="flex items-center gap-4 mb-8 mt-8">    
+    <img src="logo-rocq-orange_white.svg" alt="ROCQ" class="w-full max-w-[600px] h-28 object-contain">
+  </div>
+
+  <p class="text-[24px] leading-6 text-gray-400 max-w-2xl mb-8">
+    A trustworthy, industrial-strength interactive theorem prover and dependently-typed programming language for mechanised reasoning in mathematics, computer science and more.
+  </p>
+
+  <div class="flex flex-wrap justify-center gap-4 mb-8">
+    <a href="#" class="bg-[#ff5c00] hover:bg-indigo-950 text-white font-bold py-2 px-6 rounded-full transition-colors ease-in duration-75 text-[16px]">
+      Install
+    </a>
+    <a href="#" class="bg-[#080b19] border border-white hover:bg-white hover:text-[#080b19] text-white font-semibold py-2 px-6 rounded-full ease-in duration-75 transition-colors text-[16px]">
+      About The Rocq Prover
+    </a>
+    <a href="#" class="bg-[#080b19] border border-white hover:bg-white hover:text-[#080b19] text-white font-semibold py-2 px-6 rounded-full ease-in duration-75 transition-colors text-[16px]">
+      Why Rocq?
+    </a>
+  </div>
+
+  <div class="flex flex-col gap-2 mb-8">
+    <p class="text-[#ff5c00] cursor-pointer font-semibold text-[16px]">
+      Latest Rocq Prover release: 9.1.1
+    </p>
+    <p class="text-[#ff5c00] cursor-pointer font-semibold text-[16px]">
+      Latest Rocq Platform release: 2025.08.2
+    </p>
+  </div>
+
+  <p class="text-[16px] text-white">
+    The Rocq Prover was formerly known as the Coq Proof Assistant (see more on <a href="#" class="text-[#ff5c00] font-semibold hover:underline">the name evolution</a>).
+  </p>
+
+</div>
+
+<footer class="border-t py-16 border-[#595a64] bg-[#121321] flex items-center justify-center">
+
+  <div class="max-w-7xl w-full mx-auto px-6">
+
+    <div class="mb-8 flex gap-4 flex-col sm:flex-row items-start sm:items-center justify-between">
+        <img class="h-8" src="logo-rocq-white.svg" alt="Rocq">
+
+        <div class="h-8 flex flex-wrap cursor-pointer">
+          <button class="bg-white border text-[#494949] items-center font-light focus:text-white border-[#dfdfdf] rounded-l-4xl focus:bg-[#ff5c00] text-[14px] px-6 py-2">Light</button>
+          <button class="bg-white border text-[#494949] items-center font-light focus:text-white border-[#dfdfdf] focus:bg-[#24007f] text-[14px] px-6 py-2">Dark</button>
+          <button class="bg-white border text-[#494949] items-center font-light focus:text-white border-[#dfdfdf] rounded-r-4xl focus:bg-[#267261] text-[14px] px-6 py-2">System</button>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="space-y-8">
+          <p class="text-[#96969c] text-[14px]">Interactive Theorem Prover</p>
+
+          <div class="flex space-x-6 text-[12px] text-white">
+            <a href="#"><img src="round1.svg" alt="Zulip" class="h-6 w-6 invert"></a>
+            <a href="#"><img src="round2.svg" alt="Github" class="h-6 w-6 invert"></a>
+            <a href="#"><img src="round4.svg" alt="Discourse" class="h-6 w-6 invert"></a>
+            <a href="#"><img src="round3.svg" alt="Mastodom" class="h-6 w-6 invert"></a>
+            <a href="#"><img src="round5.svg" alt="XML" class="h-6 w-6 invert"></a>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              <div>
+                  <p class="text-[#a0a0a6] font-bold text-[14px] mb-6">About Rocq</p>
+                  <ul class="text-[14px] text-white space-y-4 font-light">
+                      <li>
+                        <p>Changelog</p>
+                      </li>
+                      <li>
+                        <p>Releases</p>
+                      </li>
+                      <li>
+                        <p>Industrial Users</p>
+                      </li>
+                      <li>
+                        <p>Academic Users</p>
+                      </li>
+                      <li>
+                        <p>History</p>
+                      </li>
+                      <li>
+                        <p>Why Rocq?</p>
+                      </li>
+                      <li>
+                        <p>Roadmap</p>
+                      </li>
+                  </ul>
+              </div>
+
+              <div>
+                  <p class="text-[#a0a0a6] font-bold text-[14px] mb-6">Resources</p>
+                  <ul class="text-[14px] text-white space-y-4 font-light">
+                      <li>
+                        <p>Install Rocq</p>
+                      </li>
+                      <li>
+                        <p>Get Started</p>
+                      </li>
+                      <li>
+                        <p>Documentation</p>
+                      </li>
+                      <li>
+                        <p>Books</p>
+                      </li>
+                      <li>
+                        <p>Papers</p>
+                      </li>
+                      <li>
+                        <p>Logo</p>
+                      </li>
+                  </ul>
+              </div>
+
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              <div>
+                  <p class="text-[#a0a0a6] font-bold text-[14px] mb-4">Ecosystem</p>
+                  <ul class="text-[14px] text-white space-y-4 font-light">
+                      <li>
+                        <p>Platform</p>
+                      </li>
+                      <li>
+                        <p>Packages</p>
+                      </li>
+                      <li>
+                        <p>Rocq Team</p>
+                      </li>
+                      <li>
+                        <p>Community</p>
+                      </li>
+                      <li>
+                        <p>Consortium</p>
+                      </li>
+                      <li>
+                        <p>Events</p>
+                      </li>
+                      <li>
+                        <p>Rocq Planet</p>
+                      </li>
+                      <li>
+                        <p>Jobs</p>
+                      </li>
+                  </ul>
+              </div>
+
+              <div>
+                  <p class="text-[#a0a0a6] font-bold text-[14px] mb-4">Policies</p>
+                  <ul class="text-[14px] text-white space-y-4 font-light">
+                      <li>
+                        <p>Governance</p>
+                      </li>
+                      <li>
+                        <p>Privacy</p>
+                      </li>
+                      <li>
+                        <p>Code of Conduct</p>
+                      </li>
+                  </ul>
+              </div>
+
+        </div>
+
+    </div>
+  </div>
+
+</footer>
+  
+</body>
+
+</html>

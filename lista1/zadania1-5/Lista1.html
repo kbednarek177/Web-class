@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zadanie 3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> <!-- Zadanie1 -->
+</head>
+
+<body>
+    <div class="bg-[#2f2f2f] grid grid-cols-1 md:grid-cols-[1fr_1fr_1fr_3fr] gap-10 md:gap-4 p-10 font-sans"> <!-- Zadanie5 -->
+        <div class="flex-col flex gap-4">
+            <h3 class="font-bold uppercase text-gray-500">Services</h3>
+
+            <ul class="text-gray-400">
+                <li><a href="#" class="hover:text-gray-300">Branding</a></li>
+                <li><a href="#" class="hover:text-gray-300">Design</a></li>
+                <li><a href="#" class="hover:text-gray-300">Marketing</a></li>
+                <li><a href="#" class="hover:text-gray-300">Advertisement</a></li>
+            </ul>
+        </div>
+        <div class="flex-col flex gap-4">
+            <h3 class="font-bold uppercase text-gray-500">Company</h3>
+
+            <ul class="text-gray-400">
+                <li><a href="#" class="hover:text-gray-300">About us</a></li>
+                <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+                <li><a href="#" class="hover:text-gray-300">Jobs</a></li>
+                <li><a href="#" class="hover:text-gray-300">Press kit</a></li>
+            </ul>
+        </div>
+        <div class="flex-col flex gap-4">
+            <h3 class="font-bold uppercase text-gray-500">Legal</h3>
+
+            <ul class="text-gray-400">
+                <li><a href="#" class="hover:text-gray-300">Terms of use</a></li>
+                <li><a href="#" class="hover:text-gray-300">Privacy policy</a></li>
+                <li><a href="#" class="hover:text-gray-300">Cookie policy</a></li>
+            </ul>
+        </div>
+        <div class="flex-col flex gap-4">
+            <h3 class="font-bold uppercase text-gray-500">Newsletter</h3>
+
+            <div>
+                <p class="text-gray-400">Enter your email address</p>
+                <div class="flex">    
+                    <input
+                        type="email"
+                        placeholder="username@site.com"
+                        class="bg-[#1f1f1f] text-gray-300 p-2 border border-gray-600 rounded-l focus:outline-none focus:border-blue-600"   
+                    >
+                    <button class="bg-blue-600 text-white hover:bg-red-600 cursor-pointer
+                    transition-colors duration-[0.5s] px-4 border border-gray-600 rounded-r">Subscribe</button>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Zadanie4
+         ul>li
+         h1+p
+         ul>li*3
+         p{Hello world} 
+         button.klasa#iden
+         ul>li.item$*3
+    -->
+
+    <!-- Zadanie7 -->
+    <button class="bg-blue-600 text-white p-2 rounded transition 
+                   hover:bg-blue-400 
+                   active:bg-blue-800 active:scale-95 
+                   focus:outline-none focus:ring-4 focus:ring-blue-300">
+        Subscribe
+    </button>
+    
+    <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline 
+                       focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-1">
+        Jakis link
+    </a>
+
+    <input type="text" placeholder="Wpisz coś"
+           class="border border-gray-300 rounded px-4 py-2
+                  hover:border-gray-400 
+                  focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200">
+
+    <p class="text-gray-600 p-2 rounded transition-colors
+              hover:bg-yellow-100 hover:text-gray-900">
+        Hello world
+    </p>
+
+</body>
+
+</html>
