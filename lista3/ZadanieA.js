@@ -1,4 +1,4 @@
-//Zadanie 1
+//Zadanie 1 (source /home/kbed/.bash_profile)
 function fibrec(x){
     if(x === 2 || x === 1){
         return 1;
@@ -66,14 +66,10 @@ console.log(`Zadanie3:`);
 console.log(`selectFib(10): ${selectFib([1,2,3,4,5,6,7,8,9,10,55,34,77,66,44])}\n`);
 
 //Zadanie 4
-function addXToNumber(x){
-    return function(y) { return x + y; }
-}
-
 function shiftFib(x){
     return function(y) {
         let xs = arrOfFib(y);
-        return xs.map(addXToNumber(x)); 
+        return xs.map(liczba => liczba + x); 
     }
 }
 
@@ -123,6 +119,8 @@ function customFib(ini, rule) {
 
 console.log(`Zadanie6:`);
 console.log(`customFib: ${(customFib([1,1], (x, xs) => xs[x-2] + xs[x-1]))(10)}\n`);
+console.log(`customFib: ${(customFib([1,0], (x, xs) => xs[x-2] + xs[x-1]))(10)}\n`);
+console.log(`customFib: ${(customFib([1,2], (x, xs) => xs[x-1]))(10)}\n`);
 
 //Zadanie 7
 function addEndsOfAr(xs){
