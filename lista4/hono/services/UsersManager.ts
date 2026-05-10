@@ -1,16 +1,48 @@
-export type User = {
-  name: string;
-  email: string;
-  password: string;
-  createdAt: Date;
-  id: string;
-};
-
 export type UpdateUserData = {
   name?: string;
   email?: string;
   password?: string;
 };
+
+export class User {
+  id: string;
+  name: string;
+  email: string;
+  password: string;
+  createdAt: Date;
+
+  constructor(id: string, name: string, email: string, password: string) {
+    this.id = id;
+    this.name = name;
+    this.email = email;
+    this.password = password;
+    this.createdAt = new Date();
+  }
+
+  update(data: UpdateUserData) {
+    if (data.name !== undefined) this.name = data.name;
+    if (data.email !== undefined) this.email = data.email;
+    if (data.password !== undefined) this.password = data.password;
+  }
+
+  delete() {
+    UsersManager.getInstance().deleteUser(this.id);
+  }
+
+
+  toString() {
+    return JSON.stringify(
+      {
+        id: this.id,
+        name: this.name,
+        email: this.email,
+        createdAt: this.createdAt,
+      },
+      null,
+      2 //wcięcia
+    );
+  }
+}
 
 class UsersManager {
 
@@ -38,13 +70,10 @@ class UsersManager {
   }
 
 
-  addUser(data: Omit<User, "id" | "createdAt">): User { //omit da mi argument na user bez kluczy id createAt
+  addUser(data: { name: string; email: string; password: string }): User {
     const id = (this.#nextUserId++).toString();
-    const newUser: User = {
-      ...data,
-      id,
-      createdAt: new Date(),
-    };
+    const newUser = new User(id, data.name, data.email, data.password);
+    
     this.#users.push(newUser);
     return newUser;
   }
@@ -57,17 +86,6 @@ class UsersManager {
     return true;
   }
 
-
-  updateUser(id: string, data: UpdateUserData): User | null {
-    const user = this.#users.find((u) => u.id === id);
-    if (!user) return null;
-
-    if (data.name) user.name = data.name;
-    if (data.email) user.email = data.email;
-    if (data.password) user.password = data.password;
-
-    return user;
-  }
 }
 
 export const usersManager = UsersManager.getInstance(); //Singleton op

@@ -28,12 +28,13 @@ export const adminRouter = new Hono()
   .delete("/user/:id", (c) => {
     const id = c.req.param("id");
     
-    const success = usersManager.deleteUser(id);
+    const user = usersManager.findUser(id);
 
-    if (!success) {
+    if (!user) {
       return c.text("Użytkownik nie znaleziony", 404);
     }
 
+    user.delete();
     return c.text(`Usunięto użytkownika o ID: ${id}`);
   })
 
@@ -56,11 +57,12 @@ export const adminRouter = new Hono()
 
     if (!data) return c.json({ error: "Invalid request body. Expected optional strings for name, email, or password" }, 400);
 
-    const updatedUser = usersManager.updateUser(id, data);
+    const user = usersManager.findUser(id);
 
-    if (!updatedUser) {
+    if (!user) {
       return c.text("Użytkownik nie znaleziony", 404);
     }
 
+    user.update(data);
     return c.text(`Zaktualizowano użytkownika o ID: ${id}`);
   });
